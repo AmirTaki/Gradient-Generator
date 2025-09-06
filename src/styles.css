@@ -64,3 +64,9 @@ input[type="color"]::-webkit-color-swatch{
 .rotate-icon i{
     transform: rotate(45deg);
 }
+
+.buttons .active{
+    border: none;
+    background-color: #4a6ee0;
+    color: #ffffff;
+}
