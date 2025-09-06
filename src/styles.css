@@ -5,3 +5,7 @@
     border: none;
     outline: none;
 }
+
+body{
+    height: 100vh;
+}
