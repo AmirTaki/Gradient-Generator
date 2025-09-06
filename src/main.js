@@ -12,3 +12,7 @@ const setDirection = (value,_this) =>{
     _this.classList.add("active")
     currentDirection = value
 }
+
+const generateCode = () => {
+    outputCode.value = `background-image: linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value})`;
+}
