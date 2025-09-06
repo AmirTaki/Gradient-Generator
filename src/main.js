@@ -1,36 +1,28 @@
-const colorOne = document.getElementById("color-a")
-const colorTwo = document.getElementById("color-b")
-const currentDirection = 'to bottom ';
-const outputCode = document.getElementById('code') 
+let colorOne = document.getElementById('color-a');
+let colorTwo = document.getElementById('color-b');
+let currentDirection = 'to bottom';
+let outputCode = document.getElementById('code');
 
-const submit = document.getElementById('submit')
-
-function setDirection  (value,_this) {
-    let directions = document.querySelectorAll(".buttons button")
-    directions.forEach((item) => {
-        item.classList.remove("active")
-    });
-    _this.classList.add("active")
-    currentDirection = value
+function setDirection(value,_this){
+    let directions = document.querySelectorAll(".buttons button");
+    for(let i of directions){
+        i.classList.remove('active');
+    }
+    _this.classList.add('active');
+    currentDirection = value;
 }
 
+function generateCode(){
+    outputCode.value = `background-image: linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value});`
 
-submit.addEventListener("click", () => {
-
-        outputCode.value = `background-image: linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value});`
     document.getElementsByTagName("BODY")[0].style.backgroundImage = `linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value})`;
-
-})
-
-function generateCode ()  {
-    console.log("ok")
 }
 
-function copyText () {
+function copyText(){
     outputCode.select();
-    document.execCommand('copy')
-    alert('Gradient Copied!')
+    document.execCommand('copy');
+    alert('Gradient Copied!');
 }
 
+generateCode();
 
-// generateCode();
