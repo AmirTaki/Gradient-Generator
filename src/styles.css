@@ -92,3 +92,15 @@ input[type="color"]::-webkit-color-swatch{
     padding: 10px 20px;
     background-color: transparent;
 }
+
+#copy{
+    font-size: 14px;
+    background-color: #4a6ee0;
+    color: #ffffff;
+    position: relative;
+    left: 85%;
+    bottom: 10px;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+}
