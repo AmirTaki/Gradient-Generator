@@ -38,3 +38,8 @@ input[type="color"]{
     height: 45px;
     cursor: pointer;
 }
+
+input[type="color"]::-webkit-color-swatch{
+    border-radius: 20px;
+    border: none;
+}
