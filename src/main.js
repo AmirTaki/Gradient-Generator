@@ -4,6 +4,7 @@ let currentDirection = 'to bottom';
 let outputCode = document.getElementById('code') 
 
 
+
 function setDirection  (value,_this) {
     let directions = document.querySelectorAll(".buttons button")
     directions.forEach((item) => {
@@ -14,6 +15,8 @@ function setDirection  (value,_this) {
 }
 
 function generateCode ()  {
+    console.log(colorOne.value)
+    console.log(colorTwo.value)
     outputCode.value = `background-image: linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value});`
     document.getElementsByTagName('BODY')[0].style.backgroundImage  = `linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value}`
 }
