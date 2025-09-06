@@ -6,4 +6,7 @@ const outputCode = document.getElementById('code')
 
 const setDirection = (value,_this) =>{
     let directions = document.querySelectorAll(".buttons button")
+    directions.forEach((item) => {
+        
+    });
 }
