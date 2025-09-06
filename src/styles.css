@@ -81,3 +81,14 @@ input[type="color"]::-webkit-color-swatch{
     margin: 0 auto 30px auto;
     cursor: pointer;
 }
+
+.output{
+    background-color: #f0f2fc;
+}
+#code{
+    width: 100%;
+    resize: none;
+    color: #30304a;
+    padding: 10px 20px;
+    background-color: transparent;
+}
