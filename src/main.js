@@ -1,9 +1,9 @@
-let colorOne = document.getElementById("color-a")
-let colorTwo = document.getElementById("color-b")
-let currentDirection = 'to bottom ';
-let outputCode = document.getElementById('code') 
+const colorOne = document.getElementById("color-a")
+const colorTwo = document.getElementById("color-b")
+const currentDirection = 'to bottom ';
+const outputCode = document.getElementById('code') 
 
-
+const submit = document.getElementById('submit')
 
 function setDirection  (value,_this) {
     let directions = document.querySelectorAll(".buttons button")
@@ -15,10 +15,15 @@ function setDirection  (value,_this) {
 }
 
 
+submit.addEventListener("click", () => {
+
+        outputCode.value = `background-image: linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value});`
+    document.getElementsByTagName("BODY")[0].style.backgroundImage = `linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value})`;
+
+})
+
 function generateCode ()  {
     console.log("ok")
-    // outputCode.value = `background-image: linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value});`
-    // document.getElementsByTagName("BODY")[0].style.backgroundImage = `linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value})`;
 }
 
 function copyText () {
@@ -28,4 +33,4 @@ function copyText () {
 }
 
 
-generateCode();
+// generateCode();
