@@ -43,3 +43,10 @@ input[type="color"]::-webkit-color-swatch{
     border-radius: 20px;
     border: none;
 }
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
