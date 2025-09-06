@@ -60,3 +60,7 @@ input[type="color"]::-webkit-color-swatch{
     border-radius: 5px;
     cursor: pointer;
 }
+
+.rotate-icon i{
+    transform: rotate(45deg);
+}
