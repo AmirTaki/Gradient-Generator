@@ -7,6 +7,8 @@ const outputCode = document.getElementById('code')
 const setDirection = (value,_this) =>{
     let directions = document.querySelectorAll(".buttons button")
     directions.forEach((item) => {
-        
+        item.classList.remove("active")
     });
+    _this.classList.add("active")
+    currentDirection = value
 }
