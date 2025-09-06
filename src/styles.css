@@ -30,3 +30,11 @@ body{
     display: flex;
     justify-content: space-around;
 }
+
+input[type="color"]{
+    -webkit-appearance: none;
+    background-color: transparent;
+    width: 100px;
+    height: 45px;
+    cursor: pointer;
+}
