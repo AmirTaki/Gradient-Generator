@@ -24,3 +24,9 @@ body{
 .container *:not(i){
     font-family: "Rubik",sans-serif;
 }
+
+.colors{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
