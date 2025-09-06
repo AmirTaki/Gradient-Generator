@@ -1,6 +1,6 @@
 let colorOne = document.getElementById("color-a")
 let colorTwo = document.getElementById("color-b")
-let currentDirection = 'to bottom';
+let currentDirection = 'to bottom ';
 let outputCode = document.getElementById('code') 
 
 
@@ -14,11 +14,11 @@ function setDirection  (value,_this) {
     currentDirection = value
 }
 
+
 function generateCode ()  {
-    console.log(colorOne.value)
-    console.log(colorTwo.value)
-    outputCode.value = `background-image: linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value});`
-    document.getElementsByTagName('BODY')[0].style.backgroundImage  = `linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value}`
+    console.log("ok")
+    // outputCode.value = `background-image: linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value});`
+    // document.getElementsByTagName("BODY")[0].style.backgroundImage = `linear-gradient(${currentDirection}, ${colorOne.value}, ${colorTwo.value})`;
 }
 
 function copyText () {
